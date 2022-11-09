@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+    /* 기본폰트 10px 설정 */
+}
+
+body {
+    color: #000;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans KR', serif, 'Spoqa Han Sans Neo',
+        sans-serif;
+}
+
+.spoqa {
+    font-family: 'Spoqa Han Sans Neo', serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#wrap {
+    overflow-x: hidden;
+}
+
+.inner {
+    max-width: calc(100% - 400px);
+    margin: 0 auto;
+}
+
+/* @media (max-width : 1600px) {
+    .inner {
+        max-width: calc(100% - 160px);
+    }
+}
+
+@media (max-width : 1400px) {
+    .inner {
+        max-width: calc(100% - 140px);
+    }
+}
+
+@media (max-width : 1200px) {
+    .inner {
+        max-width: calc(100% - 120px);
+    }
+}
+*/
+@media (max-width : 1920px) {
+    section {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width : 1024px) {
+    .inner {
+        max-width: calc(100% - 200px);
+    }
+
+    section {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width : 768px) {
+    .inner {
+        max-width: calc(100% - 100px);
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* header시작 */
+
+#header {
+    position: absolute;
+    border: 1px solid blue;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+#header .header_logo {
+    margin: 0 80px;
+}
+
+#header .gnb {
+    display: flex;
+}
+
+#header .gnb>li {
+    border: 1px solid red;
+}
+
+#header .gnb>li>a {
+    display: block;
+    padding: 20px;
+}
+
+#header .mypage {
+    position: absolute;
+    right: 30px;
+}
+
+/* header 끝 */
+
+
+/* main_banner 시작 */
+
+/* main_banner 끝 */
+
+/* course 시작 */
+#course .course_txt {
+    text-align: center;
+}
+
+#course .course_txt p {
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+#course .course_list ul {
+    margin-top: 50px;
+}
+
+#course .course_list ul a:first-child li {
+    background-color: #EAF0F6;
+}
+
+#course .course_list ul a:nth-child(2) li {
+    background-color: #F2EAFF;
+}
+
+#course .course_list ul a:nth-child(3) li {
+    background-color: #F8E8FF;
+}
+
+#course .course_list ul a:nth-child(4) li {
+    background-color: #E4E4EF;
+}
+
+#course .course_list ul a:nth-child(5) li {
+    background-color: #ECEEFF;
+}
+
+#course .course_list ul a:nth-child(6) li {
+    background-color: #FFF3EB;
+}
+
+#course .course_list ul a:last-child li {
+    background-color: #E9FAF5;
+}
+
+#course .course_list ul a li {
+    position: relative;
+    font-size: 1.8rem;
+    background-color: beige;
+    padding: 30px 0;
+    padding-left: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#course .course_list ul a li:hover {
+    background-color: #4000c7;
+    color: #FFF;
+}
+
+
+#course .course_list .recruit {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#course .course_list li .list_title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* course 끝 */
+
+/* bootcamp 시작 */
+#bootcamp .inner .bootcamp_list dl {
+    position: relative;
+    background-color: #E9FAF5;
+    width: 750px;
+    height: 430px;
+}
+
+#bootcamp .inner .bootcamp_list dl dd,
+#bootcamp .inner .bootcamp_list dl dt {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+/* bootcamp 끝 */
