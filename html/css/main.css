@@ -76,7 +76,7 @@ body {
     }
 }
 
-.title {
+#container .title {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
@@ -120,6 +120,7 @@ body {
 
 
 /* main_banner 시작 */
+
 
 /* main_banner 끝 */
 
@@ -202,18 +203,278 @@ body {
 /* course 끝 */
 
 /* bootcamp 시작 */
+#bootcamp .bootcamp_txt {
+    margin-bottom: 50px;
+}
+
+#bootcamp .inner .bootcamp_list {
+    display: flex;
+    flex-direction: column;
+    color: #Fff;
+
+}
+
 #bootcamp .inner .bootcamp_list dl {
     position: relative;
     background-color: #E9FAF5;
-    width: 750px;
-    height: 430px;
+    width: 50%;
+    height: 364px;
+    border-radius: 30px;
+
 }
 
-#bootcamp .inner .bootcamp_list dl dd,
+#bootcamp .inner .bootcamp_list dl:nth-child(even) {
+    align-self: flex-end;
+}
+
+#bootcamp .inner .bootcamp_list dl:first-child {
+    background: url("../images/main/benefit-1.png") no-repeat center center;
+    background-size: cover;
+}
+
+#bootcamp .inner .bootcamp_list dl:nth-child(2) {
+    background: url("../images/main/benefit-2.png") no-repeat;
+    background-size: cover;
+}
+
+#bootcamp .inner .bootcamp_list dl:nth-child(3) {
+    background: url("../images/main/benefit-3.png") no-repeat;
+    background-size: cover;
+}
+
+#bootcamp .inner .bootcamp_list dl:nth-child(4) {
+    background: url("../images/main/benefit-4.png") no-repeat;
+    background-size: cover;
+}
+
+#bootcamp .inner .bootcamp_list dl:last-child {
+    background: url("../images/main/benefit-5.png") no-repeat;
+    background-size: cover;
+}
+
 #bootcamp .inner .bootcamp_list dl dt {
     position: absolute;
+    bottom: 140px;
+    left: 30px;
+    font-size: 2.4rem;
+    text-decoration: underline;
+}
+
+#bootcamp .inner .bootcamp_list dl dd {
+    position: absolute;
     bottom: 50px;
-    left: 50px;
+    left: 30px;
+    font-size: 2.4rem;
 }
 
 /* bootcamp 끝 */
+
+/* review 시작 */
+#review .review_txt {
+    margin-bottom: 50px;
+}
+
+#review .review_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#review .review_img img {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #8E39FC 0%, #001B66 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 3px;
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+#review .review_desc {
+    height: 300px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#review .review_desc dt {
+    font-weight: 700;
+    color: #4000c7;
+    font-size: 3rem;
+
+}
+
+#review .review_desc dl dt {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#review .review_btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#review .review_btn .btn_more {
+    display: inline-block;
+    background-color: #8E39FC;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#review .review_btn .btn_more:hover {
+    color: #fff;
+    background-color: #4000c7;
+}
+
+/* review 끝 */
+
+/* status 시작 */
+#status {
+    background: #eee;
+    padding: 200px 0;
+}
+
+#status .status_txt {
+    margin-bottom: 50px;
+}
+
+#status .status_list {
+    display: flex;
+    justify-content: center;
+}
+
+#status .status_list dl {
+    width: calc((100% - 50px) / 2);
+    text-align: center;
+    height: 300px;
+
+}
+
+#status .status_list dl dt {
+    font-size: 2rem;
+    color: #999;
+}
+
+#status .status_list dl dd {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#status .status_list dl:first-child {
+    background: url("../images/main/outcomes-1.png") no-repeat center bottom;
+    background-size: 200px 200px;
+}
+
+#status .status_list dl:nth-child(2) {
+    background: url("../images/main/outcomes-2.png") no-repeat center bottom;
+    background-size: 200px 200px;
+}
+
+#status .status_list2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#status .status_list2 dl {
+    width: calc((100% - 75px) / 3);
+    text-align: center;
+    height: 300px;
+
+}
+
+#status .status_list2 dl dt {
+    font-size: 2rem;
+    color: #999;
+}
+
+#status .status_list2 dl dd {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#status .status_list2 dl:first-child {
+    background: url("../images/main/outcomes-3.png") no-repeat center bottom;
+    background-size: 200px 200px;
+}
+
+#status .status_list2 dl:nth-child(2) {
+    background: url("../images/main/outcomes-4.png") no-repeat center bottom;
+    background-size: 200px 200px;
+}
+
+#status .status_list2 dl:last-child {
+    background: url("../images/main/outcomes-5.png") no-repeat center bottom;
+    background-size: 200px 200px;
+}
+
+/* status 끝 */
+
+/* logo 시작 */
+#logo {
+    width: 100%;
+}
+
+
+#logo .animation {
+    position: relative;
+    height: 200px;
+}
+
+#logo .logo_slide1 {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/main/logoslide1.png") repeat-x left top;
+    animation: ani 20s linear infinite;
+}
+
+
+#logo .logo_slide2 {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/main/logoslide2.png") repeat-x left top;
+    animation: ani2 20s linear infinite;
+}
+
+#logo .logo_slide2 img {
+    height: 30px;
+    margin-right: 50px;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0px 0px;
+    }
+
+
+    100% {
+
+        background-position: 2400px 0px;
+    }
+
+}
+
+@keyframes ani2 {
+    0% {
+        background-position: 3000px 0px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
+
+}
+
+/* logo 끝 */
