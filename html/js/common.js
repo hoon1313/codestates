@@ -3,10 +3,9 @@ $(document).ready(function () { // 문서준비 이벤트 시작
     AOS.init();
 
     
-const mb = new Swiper(".mb", {
-    slidesPerView: 2,
-  centeredSlides: true,
-    spaceBetween : 10,
+  const mb = new Swiper(".mb", {
+    autoplay: true,
+    speed : 1000,
     loop: true,
         pagination: {
           el: ".swiper-pagination",
@@ -21,5 +20,8 @@ navigation : {
 nextEl : '.swiper-button-next',  // 다음 버튼
 prevEl : '.swiper-button-prev',  // 이전 버튼
 },
-});
+  });
+  
+
+
 }); // 문서준비 이벤트 끝
