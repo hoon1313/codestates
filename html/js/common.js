@@ -22,6 +22,14 @@ prevEl : '.swiper-button-prev',  // 이전 버튼
 },
   });
   
+  /* gnb */
+  $(".depth2").hide();
+  $(".gnb > li").hover(function () {
+    $(this).children(".depth2").stop().slideToggle(200);
+  });
 
-
+  $(".depth3").hide();
+  $(".depth2 > li").hover(function () {
+    $(this).children(".depth3").stop().fadeToggle();
+  });
 }); // 문서준비 이벤트 끝
