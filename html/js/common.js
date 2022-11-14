@@ -12,7 +12,7 @@ $(document).ready(function () { // 문서준비 이벤트 시작
           clickable: true,
         },
 });
-  
+  /* 후기 */
   const review = new Swiper('.review', {
    // 옵션
     loop: true,
@@ -21,7 +21,12 @@ nextEl : '.swiper-button-next',  // 다음 버튼
 prevEl : '.swiper-button-prev',  // 이전 버튼
 },
   });
-  
+
+  /* 카드메뉴 */
+  const card = new Swiper('.card', {
+    effect: "cards",
+        grabCursor: true,
+  })
   /* gnb */
   $(".depth2").hide();
   $(".gnb > li").hover(function () {

@@ -197,9 +197,6 @@ body {
 }
 
 
-
-
-
 @media (max-width : 1920px) {
     #header .ham {
         display: none;
@@ -215,6 +212,8 @@ body {
 
     #header .ham {
         display: block;
+       font-size: 3rem;
+          
     }
 }
 
@@ -801,7 +800,8 @@ body {
     left: 0;
     right: 0;
     background: url("../images/main/logoslide1.png") repeat-x left top;
-    animation: ani 20s linear infinite;
+    -webkit-animation: ani 20s linear infinite;
+            animation: ani 20s linear infinite;
 }
 
 
@@ -812,12 +812,26 @@ body {
     left: 0;
     right: 0;
     background: url("../images/main/logoslide2.png") repeat-x left top;
-    animation: ani2 20s linear infinite;
+    -webkit-animation: ani2 20s linear infinite;
+            animation: ani2 20s linear infinite;
 }
 
 #logo .logo_slide2 img {
     height: 30px;
     margin-right: 50px;
+}
+
+@-webkit-keyframes ani {
+    0% {
+        background-position: 0px 0px;
+    }
+
+
+    100% {
+
+        background-position: 2400px 0px;
+    }
+
 }
 
 @keyframes ani {
@@ -829,6 +843,17 @@ body {
     100% {
 
         background-position: 2400px 0px;
+    }
+
+}
+
+@-webkit-keyframes ani2 {
+    0% {
+        background-position: 3000px 0px;
+    }
+
+    100% {
+        background-position: 0px 0px;
     }
 
 }
@@ -1044,7 +1069,14 @@ body {
     }
 
 }
+@media (max-width : 500px) { 
+    #footer .footer_bottom .fb_ul {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+    }
 
+}
 @media (max-width:400px) {
     #footer .footer_top .ft_title {
         font-size: 2rem;
