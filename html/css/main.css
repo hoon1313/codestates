@@ -196,7 +196,76 @@ body {
     cursor: pointer;
 }
 
+/* mgnb */
+#header .mgnb_wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+    padding: 100px 50px;
+}
 
+#header .mgnb_wrap .mgnb {
+    border-top: 1px solid #000;
+}
+
+#header .mgnb_wrap .mgnb>li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 5px;
+    font-size: 2.4rem;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 {
+    padding: 10px;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 li {
+    position: relative;
+    padding-left: 10px;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 li a {
+    transition: color 0.2s;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 li a:hover {
+    color: #000000;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #999;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 p {
+    color: #8E39FC;
+    padding: 15px 0;
+}
+
+#header .mgnb_wrap .mgnb .mdepth2 li a {
+    font-size: 1.4rem;
+    color: #999;
+}
+
+#header .mgnb_wrap .mgnb_close {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    font-size: 3rem;
+}
+
+/* mgnb */
 @media (max-width : 1920px) {
     #header .ham {
         display: none;
@@ -212,8 +281,8 @@ body {
 
     #header .ham {
         display: block;
-       font-size: 3rem;
-          
+        font-size: 3rem;
+
     }
 }
 
@@ -801,7 +870,7 @@ body {
     right: 0;
     background: url("../images/main/logoslide1.png") repeat-x left top;
     -webkit-animation: ani 20s linear infinite;
-            animation: ani 20s linear infinite;
+    animation: ani 20s linear infinite;
 }
 
 
@@ -813,7 +882,7 @@ body {
     right: 0;
     background: url("../images/main/logoslide2.png") repeat-x left top;
     -webkit-animation: ani2 20s linear infinite;
-            animation: ani2 20s linear infinite;
+    animation: ani2 20s linear infinite;
 }
 
 #logo .logo_slide2 img {
@@ -1069,7 +1138,8 @@ body {
     }
 
 }
-@media (max-width : 500px) { 
+
+@media (max-width : 500px) {
     #footer .footer_bottom .fb_ul {
         display: flex;
         height: 600px;
@@ -1077,6 +1147,7 @@ body {
     }
 
 }
+
 @media (max-width:400px) {
     #footer .footer_top .ft_title {
         font-size: 2rem;
